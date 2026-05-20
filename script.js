@@ -25,7 +25,7 @@ if (hamburger) {
 // Close mobile menu when link clicked
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-        if (navMenu.style.display === 'flex') {
+        if (navMenu && navMenu.style.display === 'flex') {
             navMenu.style.display = 'none';
         }
     });
